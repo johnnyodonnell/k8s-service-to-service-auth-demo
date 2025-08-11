@@ -3,6 +3,8 @@ package main
 import (
     "fmt"
     "net/http"
+    "os"
+
     "github.com/gin-gonic/gin"
 )
 
@@ -17,6 +19,12 @@ func main() {
     router := gin.Default()
     router.GET("/health", isHealthy)
 
-    router.Run("localhost:8080")
+    port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080"
+    }
+
+    addr := fmt.Sprintf("localhost:%s", port)
+    router.Run(addr)
 }
 
