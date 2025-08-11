@@ -27,7 +27,7 @@ func main() {
         port = "8080"
     }
 
-    addr := fmt.Sprintf("localhost:%s", port)
+    addr := fmt.Sprintf(":%s", port)
     router.Run(addr)
 }
 
