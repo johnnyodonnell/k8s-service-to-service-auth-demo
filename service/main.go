@@ -9,12 +9,15 @@ import (
 )
 
 
+
 func isHealthy(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, true)
 }
 
 func main() {
-    fmt.Println("ServiceA starting up...")
+    fmt.Println("Starting up...")
+
+    go StartCron()
 
     router := gin.Default()
     router.GET("/health", isHealthy)
