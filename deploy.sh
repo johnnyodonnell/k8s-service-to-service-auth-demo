@@ -1,11 +1,7 @@
 #!/bin/bash
 
 
-# Clean up previous deployments
-kubectl delete deployment demo-service-a
-kubectl delete service demo-service-a
-kubectl delete deployment demo-service-b
-kubectl delete service demo-service-b
+./cleanup.sh
 
 # Deploy services
 kubectl create deployment demo-service-a --image=demo-service:current
