@@ -3,3 +3,6 @@
     - https://github.com/kubernetes/minikube/issues/6848#issuecomment-660601519
     - This is needed for pulling images within my corp network
 
+* Updating minikube's trusted certs
+    - https://minikube.sigs.k8s.io/docs/handbook/untrusted_certs/
+
