@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: demo-service
-          image: demo-service:current
+          image: kingod180/demo-service
           ports:
             - name: http
               containerPort: 8080
@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: demo-service
-          image: demo-service:current
+          image: kingod180/demo-service
           ports:
             - name: http
               containerPort: 8080

@@ -1,9 +1,7 @@
 #!/bin/bash
 
 
-docker build -t demo-service -f docker/Dockerfile .
+docker build -t kingod180/demo-service -f docker/Dockerfile .
 
-docker tag demo-service:latest demo-service:current
-
-minikube image load demo-service:current
+docker push kingod180/demo-service
 
