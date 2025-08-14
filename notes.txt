@@ -1,4 +1,8 @@
 
+* AWS EKS had some interesting behavior where my AWS IAM user had
+    to be explicitly given access to the cluster from within the
+    cluster settings, despite my IAM user having Admin access
+
 * Updating minikube's registry mirror
     - https://github.com/kubernetes/minikube/issues/6848#issuecomment-660601519
     - This is needed for pulling images within my corp network
