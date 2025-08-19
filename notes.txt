@@ -1,4 +1,9 @@
 
+* Had to configure my network like Serenity's network
+    - Set cluster endpoint and node traffic to private
+    - Updated cluster security group to allow SSH traffic
+        from inside Blue network (10.0.0.0/8)
+
 * AWS EKS had some interesting behavior where my AWS IAM user had
     to be explicitly given access to the cluster from within the
     cluster settings, despite my IAM user having Admin access
